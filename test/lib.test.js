@@ -27,6 +27,6 @@ describe('absolute', () => {
 describe('greet', ()=>{
     it('it should return the greeting message', () => {
        const result = lib.greet('Chidi');
-       expect(result).toContain('Chidi');
+       expect(result).toMatch(/Chidi/);
     })
 })
