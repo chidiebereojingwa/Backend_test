@@ -20,3 +20,13 @@ describe('absolute', () => {
         expect(result).toBe(0)
     });
 })
+
+
+// Testing Strings
+
+describe('greet', ()=>{
+    it('it should return the greeting message', () => {
+       const result = lib.greet('Chidi');
+       expect(result).toBe('Welcome Chidi');
+    })
+})
