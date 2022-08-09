@@ -30,3 +30,17 @@ describe('greet', ()=>{
        expect(result).toMatch(/Chidi/);
     })
 })
+
+
+// Testing arrays 
+
+describe("getCurrencies", () => {
+    it('should return arrays of currencies', () => {
+        const result = lib.getCurrencies();
+
+        // Proper way
+        expect(result).toContain('USD');
+        expect(result).toContain("AUD");
+        expect(result).toContain("EUR");
+    })
+});
